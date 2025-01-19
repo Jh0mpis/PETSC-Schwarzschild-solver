@@ -140,10 +140,11 @@ The code receives some flags in order to set up the system, the flags are descri
 | -phi_0 | Initial azimutal angle. | (`PetscReal`) any real number. | 0.0 |
 
 
-!> [!IMPORTANT]
+> [!IMPORTANT]
 > Example of usage:
  ```
-   mpiexec -n 1 ./Schwarzschild_solver -E 0.2 -L_z 3.5 -k 1 -r_0 20 -monitor 0 -iterations 10000
+    make Schwarzschild_solver
+    mpiexec -n 1 ./Schwarzschild_solver -E 0.2 -L_z 3.5 -k 1 -r_0 20 -monitor 0 -iterations 10000
  ```
 
 ## Results
