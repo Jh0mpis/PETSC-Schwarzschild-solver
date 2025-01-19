@@ -26,26 +26,20 @@ $$ = \dfrac{1}{2}\left(g_{tt}\dot{t}^2+g_{rr}\dot{r}^2+g_{\theta\theta}\dot{\the
 
 where $\dot{x}^\mu = \dfrac{dx^\mu}{d\tau}$ for massive particles, where $\tau$ is the proper time (the time measured by the particle). For the massless particles we have $\dot{x}^\mu = \dfrac{dx^\mu}{d\lambda}$, where $\lambda$ is the affine parameter. Furthermore, the 4-velocity constrain can be expressed as follows
 
-\begin{equation}
-    g_{\mu\nu}\dot{x}^\mu\dot{x}^\nu = -k,
-\end{equation}
+$$g_{\mu\nu}\dot{x}^\mu\dot{x}^\nu = -k,$$
 
 where $k = 1$ for massive particles and $k = 0$ for massless particles (photons).\\
 
 The Euler-Lagrange equations for the lagrangian can be written as follows
 
-\begin{equation}
-    \begin{split}
-        \dfrac{d}{\tau}\partialD{\mathcal{L}}{\dot{x}^\mu} - \partialD{\mathcal{L}}{x^\mu} = 0, \, \text{(Massive),}\\
-        \dfrac{d}{\lambda}\partialD{\mathcal{L}}{\dot{x}^\mu} - \partialD{\mathcal{L}}{x^\mu} = 0, \, \text{(Massless).}
-    \end{split}
-\end{equation}
+$$\dfrac{d}{\tau}\dfrac{\partial\mathcal{L}}{\partial\dot{x}^\mu} - \dfrac{\partial\mathcal{L}}{\partialx^\mu} = 0, \, \text{(Massive),}$$
+$$\dfrac{d}{\lambda}\dfrac{\partial\mathcal{L}}{\partial\dot{x}^\mu} - \dfrac{\partial\mathcal{L}}{\partialx^\mu} = 0, \, \text{(Massless).}$$
 
-Note that, $\partialD{\mathcal{L}}{t} = \partialD{\mathcal{L}}{\phi} = 0$, then $\partialD{\mathcal{L}}{\dot{t}} = - E$ and $\partialD{\mathcal{L}}{\dot{\phi}} = L_z$ are constants and are associated to the energy density of the particle and the angular moment, at the $z$, axis of the particle respectively, so we will obtain
+Note that, $\dfrac{\partial\mathcal{L}}{\partial t} = \dfrac{\partial\mathcal{L}}{\partial\phi} = 0$, then $\dfrac{\partial\mathcal{L}}{\partial\dot{t}} = - E$ and $\dfrac{\partial\mathcal{L}}{\partial\dot{\phi}} = L_z$ are constants and are associated to the energy density of the particle and the angular moment, at the $z$, axis of the particle respectively, so we will obtain
 
 \begin{equation}
     \begin{split}
-        \partialD{\mathcal{L}}{\dot{t}}& = - E   = g_{tt}\dot{t}\\
+        \dfrac{\partial\mathcal{L}}{\partial\dot{t}}& = - E   = g_{tt}\dot{t}\\
         & \text{then,}\quad \dot{t} = -\dfrac{E}{g_{tt}},
     \end{split}
 \end{equation}
@@ -54,7 +48,7 @@ and
 
 \begin{equation}
     \begin{split}
-        \partialD{\mathcal{L}}{\dot{\phi}}& = L_z   = g_{\phi\phi}\dot{\phi}\\
+        \dfrac{\partial\mathcal{L}}{\dot{\partial\phi}}& = L_z   = g_{\phi\phi}\dot{\phi}\\
         & \text{then,}\quad \dot{\phi} = \dfrac{L_z}{g_{\phi\phi}}.
     \end{split}
 \end{equation}
