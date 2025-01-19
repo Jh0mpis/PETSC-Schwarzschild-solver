@@ -37,12 +37,16 @@ $$\dfrac{d}{\lambda}\dfrac{\partial\mathcal{L}}{\partial\dot{x}^\mu} - \dfrac{\p
 
 Note that, $\dfrac{\partial\mathcal{L}}{\partial t} = \dfrac{\partial\mathcal{L}}{\partial\phi} = 0$, then $\dfrac{\partial\mathcal{L}}{\partial\dot{t}} = - E$ and $\dfrac{\partial\mathcal{L}}{\partial\dot{\phi}} = L_z$ are constants and are associated to the energy density of the particle and the angular moment, at the $z$, axis of the particle respectively, so we will obtain
 
-$$\dfrac{\partial\mathcal{L}}{\partial\dot{t}}& = - E   = g_{tt}\dot{t}$$
+$$\dfrac{\partial\mathcal{L}}{\partial\dot{t}} = - E   = g_{tt}\dot{t}$$
+
 then,
+
 $$\dot{t} = -\dfrac{E}{g_{tt}},$$
 
 and
 
-$$\dfrac{\partial\mathcal{L}}{\dot{\partial\phi}}& = L_z   = g_{\phi\phi}\dot{\phi}$$
+$$\dfrac{\partial\mathcal{L}}{\dot{\partial\phi}} = L_z  = g_{\phi\phi}\dot{\phi}$$
+
 then,
+
 $$\dot{\phi} = \dfrac{L_z}{g_{\phi\phi}}.$$
