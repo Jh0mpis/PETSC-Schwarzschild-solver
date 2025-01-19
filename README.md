@@ -106,7 +106,7 @@ $$\dot{\phi}  = \dfrac{L_z}{r^2}.$$
 
 Then, the Jacobian of the system is the following one:
 
-$$J = \begin{bmatrix} 0 & -\dfrac{2M}{(r-2M)^2} & 0 & 0\\0 & 0 & 1 & 0 \\ 0 & \dfrac{2Mkr^2-3L_z^2r+12L_zM}{r^5} & 0 & 0 \\ 0 & -\dfrac{2L_z}{r^3} & 0 0 \end{bmatrix}.$$
+$$J = \begin{bmatrix} 0 & -\dfrac{2M}{(r-2M)^2} & 0 & 0 \\\ 0 & 0 & 1 & 0 \\ 0 & \dfrac{2Mkr^2-3L_z^2r+12L_zM}{r^5} & 0 & 0 \\ 0 & -\dfrac{2L_z}{r^3} & 0 0 \end{bmatrix}.$$
 
 For solving the system of differential equations, we use the TS module of the PETSC library, then we are solving a system of the type
 
