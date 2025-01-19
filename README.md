@@ -175,7 +175,7 @@ And finally, particles that goes to infinity and does not fall into the black ho
 
 ### Photons
 
-The same as the previous case, we can reproduce the orbits, but we can check that we need a small value in the angular momentum or the particle can't fall into the black hole or make an entire orbit.
+The same as the previous case, we can reproduce the orbits, but we can check that we need a small value in the angular momentum or the particle can not fall into the black hole or make an entire orbit.
 
 ![](plots/photon_stable.gif)
 ![](plots/photon_infinity.gif)
@@ -183,4 +183,6 @@ The same as the previous case, we can reproduce the orbits, but we can check tha
 
 ## Conclusions
 
+Petsc library can solve the system of equations and give results that are according to expected behavior, reproducing the three types of geodesics expected. Particles falling into the black hole, particles orbiting the black hole and particles that goes to infinity.
 
+Different solve methods can be applied very easily due to the library flexibility, increasing the flexibility of the program. 
