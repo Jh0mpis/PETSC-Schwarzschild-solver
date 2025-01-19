@@ -189,7 +189,7 @@ int main(int argc, char *argv[])
   TS ts;
 
   // ------- Receiving the console parameters ------ //
-  PetscCall(PetscOptionsGetInt(NULL, NULL, "-monitor", &monitor, NULL));
+  PetscCall(PetscOptionsGetBool(NULL, NULL, "-monitor", &monitor, NULL));
   PetscCall(PetscOptionsGetInt(NULL, NULL, "-total_time", &total_time, NULL));
   PetscCall(PetscOptionsGetInt(NULL, NULL, "-solver", &solver, NULL));
 

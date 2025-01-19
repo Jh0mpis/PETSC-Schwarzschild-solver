@@ -5,6 +5,8 @@
 - [Code implementation](#code-implementation)
     - [Using the code](#using-the-code)
 - [Results](#results)
+    - [Massive Particles](#massive-particles)
+    - [Photons](#photons)
 - [Conclusions](#conclusions)
 
 ## Schwarzschild Geodesics
@@ -155,6 +157,15 @@ For setting the system parameters the following options exists:
 
 ## Results
 
+The code run with different tuples of parameters, including massive and non-massive particles. The code was tested in order to obtain expected behavior like precession, stable  orbits and time dilatation. 
+
+### Massive Particles
+
+For massive particles the code show consistent results encounter the three possible geodesics for different parameters. At first, the following gif shows an orbit that precesses, the same effect as Mercury.
+
+![](plots/Massive_stable.gif)
+
+### Photons
 
 
 ## Conclusions
