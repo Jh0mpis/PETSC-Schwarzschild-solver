@@ -106,11 +106,11 @@ $$\dot{\phi}  = \dfrac{L_z}{r^2}.$$
 
 Then, the Jacobian of the system is the following one:
 
-$J = \begin{bmatrix} 0 & -\dfrac{2M}{(r-2M)^2} & 0 & 0\\0 & 0 & 1 & 0 \\ 0 & \dfrac{2Mkr^2-3L_z^2r+12L_zM}{r^5} & 0 & 0 \\ 0 & -\dfrac{2L_z}{r^3} & 0 0 \end{bmatrix}.$
+$$J = \begin{bmatrix} 0 & -\dfrac{2M}{(r-2M)^2} & 0 & 0\\0 & 0 & 1 & 0 \\ 0 & \dfrac{2Mkr^2-3L_z^2r+12L_zM}{r^5} & 0 & 0 \\ 0 & -\dfrac{2L_z}{r^3} & 0 0 \end{bmatrix}.$$
 
 For solving the system of differential equations, we use the TS module of the PETSC library, then we are solving a system of the type
 
-$$\dot{\vec{x}} = F(x,t).$$
+$$\dot{\vec{x}} = F(\vec{x},t).$$
 
 The code start defining the `diff_func()` function, this function computes the right hand side of the system, i.e., $F(x, t)$ at each step. Then, we define the `diff_Jacobian()` function, where we assemble the system's Jacobian defined previously.
 
@@ -138,6 +138,13 @@ The code receives some flags in order to set up the system, the flags are descri
 | -r_0 | Initial radial distance from the black hole. | (`PetscReal`) any real and positive number greather than 2M. | 20.0M |
 | -vel_0 | Initial radial speed. | (`PetscReal`) any real number greather than 2M. | 0.0 |
 | -phi_0 | Initial azimutal angle. | (`PetscReal`) any real number. | 0.0 |
+
+
+!> [!IMPORTANT]
+> Example of usage:
+> ```
+>   mpiexec -n 1 ./Schwarzschild_solver -E 0.2 -L_z 3.5 -k 1 -r_0 20 -monitor 0 -iterations 10000
+> ```
 
 ## Results
 
