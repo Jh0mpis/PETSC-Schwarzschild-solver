@@ -1,0 +1,9 @@
+### C ###
+# Object files
+*.o
+
+# Executables
+Schwarzschild_solver
+
+### Python ###
+__pycache__/
