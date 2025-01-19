@@ -1,5 +1,7 @@
 # Solving Schwarzschild using PETSC library
 
+The following program aims to solve a system of ordinary differential equations given by the General Relativity (GR) using c and Petsc library. The equations to study are the geodesic equations for a particle in a Schwarzschild spacetime.
+
 - [Schwarzschild Geodesics](#schwarzschild-geodesics)
     - [Geodesics in the equatorial plane](#geodesics-in-the-equatorial-plane)
 - [Code implementation](#code-implementation)
