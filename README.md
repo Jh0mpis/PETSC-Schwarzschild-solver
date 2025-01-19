@@ -1,6 +1,11 @@
 # Solving Schwarzschild using PETSC library
 
-
+- [Schwarzschild Geodesics](#schwarzschild-geodesics)
+    - [Geodesics in the equatorial plane](#geodesics-in-the-equatorial-plane)
+- [Code implementation](#code-implementation)
+    - [Using the code](#using-the-code)
+- [Results](#results)
+- [Conclusions](#conclusions)
 
 ## Schwarzschild Geodesics
 
@@ -51,7 +56,7 @@ then,
 
 $$\dot{\phi} = \dfrac{L_z}{g_{\phi\phi}}.$$
 
-## Geodesics in the equatorial plane
+### Geodesics in the equatorial plane
 
 Using the 4-velocity constrain we can see that
 
@@ -114,7 +119,7 @@ $$\dot{\vec{x}} = F(\vec{x},t).$$
 
 The code start defining the `diff_func()` function, this function computes the right hand side of the system, i.e., $F(x, t)$ at each step. Then, we define the `diff_Jacobian()` function, where we assemble the system's Jacobian defined previously.
 
-The code has two types of monitors, that can be setted up using the run flag `-monitor`. The first one, print the solution in cartesian coordinates, where the first column is the proper time of the particle, the second and third column is the x and y coordinates respectively, the fourth column is the radial speed in each iteration. The second one, print the solution using polar coordinates, where the first column is again the proper time, the second one is the radius in each iteration, the third column is the radial speed and the fourth one is the azimutal angle. 
+The code has two types of monitors, that can be setted up using the run flag `-monitor`. The first one, print the solution in cartesian coordinates, where the first column is the proper time of the particle, the second and third column is the x and y coordinates respectively, the fourth column is the radial speed in each iteration. The second one, print the solution using polar coordinates, where the first column is again the proper time, the second one is the radius in each iteration, the third column is the radial speed and the fourth one is the azimutal angle. You can check [using the code](#using-the-code) subsection for more information about compilator options. 
 
 In the `main()` function, first we receive the information from the console, set up the parameters and initialize the different vectors and Matrices for solve the system. Then, we create the TS handler for set up the RHS function, RHS Jacobian and the monitor. In the next step, we select the TS type and the total time of simulation and solve the system. Finally, we destroy the Matrices, vector and TS handler.
 
@@ -128,6 +133,7 @@ The code receives some flags in order to set up the system, the flags are descri
 | -total_time | Select the total time of the simulation. | (`PetscInt`) Any positive integer value. | 100 |
 | -solver | Select the solver to use. | (`PetscInt`) 1 for `TSEULER`, 2 for `TSSSP`, otherwise `TSRK`. | 0 |
 
+For setting the system parameters the following options exists:
 
 | Parameter      | Description      | Type and Values | Default Value | 
 | ------------- | ------------- | ---|---|
