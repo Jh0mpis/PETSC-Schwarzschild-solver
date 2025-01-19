@@ -32,23 +32,17 @@ where $k = 1$ for massive particles and $k = 0$ for massless particles (photons)
 
 The Euler-Lagrange equations for the lagrangian can be written as follows
 
-$$\dfrac{d}{\tau}\dfrac{\partial\mathcal{L}}{\partial\dot{x}^\mu} - \dfrac{\partial\mathcal{L}}{\partialx^\mu} = 0, \, \text{(Massive),}$$
-$$\dfrac{d}{\lambda}\dfrac{\partial\mathcal{L}}{\partial\dot{x}^\mu} - \dfrac{\partial\mathcal{L}}{\partialx^\mu} = 0, \, \text{(Massless).}$$
+$$\dfrac{d}{\tau}\dfrac{\partial\mathcal{L}}{\partial\dot{x}^\mu} - \dfrac{\partial\mathcal{L}}{\partial x^\mu} = 0,  \text{(Massive),}$$
+$$\dfrac{d}{\lambda}\dfrac{\partial\mathcal{L}}{\partial\dot{x}^\mu} - \dfrac{\partial\mathcal{L}}{\partial x^\mu} = 0,  \text{(Massless).}$$
 
 Note that, $\dfrac{\partial\mathcal{L}}{\partial t} = \dfrac{\partial\mathcal{L}}{\partial\phi} = 0$, then $\dfrac{\partial\mathcal{L}}{\partial\dot{t}} = - E$ and $\dfrac{\partial\mathcal{L}}{\partial\dot{\phi}} = L_z$ are constants and are associated to the energy density of the particle and the angular moment, at the $z$, axis of the particle respectively, so we will obtain
 
-\begin{equation}
-    \begin{split}
-        \dfrac{\partial\mathcal{L}}{\partial\dot{t}}& = - E   = g_{tt}\dot{t}\\
-        & \text{then,}\quad \dot{t} = -\dfrac{E}{g_{tt}},
-    \end{split}
-\end{equation}
+$$\dfrac{\partial\mathcal{L}}{\partial\dot{t}}& = - E   = g_{tt}\dot{t}$$
+then,
+$$\dot{t} = -\dfrac{E}{g_{tt}},$$
 
 and
 
-\begin{equation}
-    \begin{split}
-        \dfrac{\partial\mathcal{L}}{\dot{\partial\phi}}& = L_z   = g_{\phi\phi}\dot{\phi}\\
-        & \text{then,}\quad \dot{\phi} = \dfrac{L_z}{g_{\phi\phi}}.
-    \end{split}
-\end{equation}
+$$\dfrac{\partial\mathcal{L}}{\dot{\partial\phi}}& = L_z   = g_{\phi\phi}\dot{\phi}$$
+then,
+$$\dot{\phi} = \dfrac{L_z}{g_{\phi\phi}}.$$
