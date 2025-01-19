@@ -165,7 +165,22 @@ For massive particles the code show consistent results encounter the three possi
 
 ![](plots/Massive_stable.gif)
 
+Also, we can reproduce falling orbits into the black hole, where we can see how the $\Delta t$ (proper time) dilates while the particle approach to the black hole.
+
+![](plots/massive_falling.gif)
+
+And finally, particles that goes to infinity and does not fall into the black hole or orbit.
+
+![](plots/massive_infinity.gif)
+
 ### Photons
 
+The same as the previous case, we can reproduce the orbits, but we can check that we need a small value in the angular momentum or the particle can't fall into the black hole or make an entire orbit.
+
+![](plots/photon_stable.gif)
+![](plots/photon_infinity.gif)
+![](plots/photon_crossing_the_horizon.gif)
 
 ## Conclusions
+
+
